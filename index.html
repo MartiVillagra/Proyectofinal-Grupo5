@@ -1,86 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Proyecto Final - Grupo 5">
-    <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
-    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
-    <link rel="icon" type="image" href="./images"/>
-    <title>Proyecto Final - Grupo 5</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="author" content="Proyecto Final - Grupo 5">
+  <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
+  <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
+  <link rel="icon" type="image" href="./images/icon.png" />
+  <title>Proyecto Final - Grupo 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-<!--Barra de navegación-->
-<!--Hero principal-->
-<section id="hero">
+  <!--Barra de navegación-->
+  <header>
+    <nav class="barra">
+      <img src="./images/logo.png" alt="Logo de la Agencia de Modelos" width="100">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Hero principal-->
+  <section id="hero">
     <img src="./images/imagen-fondo-hero.jpg" width="500vh">
     <h2> Empieza a modelar hoy </h2>
     <button> Inscribete ahora</button>
-</section>
+  </section>
 
-<!--Formulario de contacto-->
-<section id="contacto">
+  <!--Formulario de contacto-->
+  <section id="contacto">
     <div class="contacto-imagen">
-        <img src="./images/formulario-imagen.png" alt="Poster de modelo" width="400">
+      <img src="./images/formulario-imagen.png" alt="Poster de modelo" width="400">
     </div>
     <div class="contacto-formulario">
-        <h2>Se parte de nuestra agencia</h2>
-        <form action="#" method="POST">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
-            <input type="email" id="email" name="email" placeholder="Email*" required>
-            <input type="text" id="presentacion" name="presentacion" placeholder="Presentación*" required>
+      <h2>Se parte de nuestra agencia</h2>
+      <form action="#" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
+        <input type="email" id="email" name="email" placeholder="Email*" required>
+        <input type="text" id="presentacion" name="presentacion" placeholder="Presentación*" required>
 
-            <button type="submit">Empieza a modelar</button>
-        </form>
-        <p class="contacto-texto">¿Te imaginas frente a una cámara, una campaña o incluso en una pasarela?<br>Déjanos tus datos y viví la experiencia con nosotros.<br><br><strong>Primera clase gratis, ¡no te lo pierdas!</strong></p>
+        <button type="submit">Empieza a modelar</button>
+      </form>
+      <p class="contacto-texto">¿Te imaginas frente a una cámara, una campaña o incluso en una pasarela?<br>Déjanos tus
+        datos y viví la experiencia con nosotros.<br><br><strong>Primera clase gratis, ¡no te lo pierdas!</strong></p>
     </div>
+  </section>
 
-<!--Sobre nosotros-->
+  <!--Sobre nosotros-->
+  <section id="sobre-nosotros">
+    <h2>Lorena Roldan Agencia de Modelos</h2>
 
-<section id="sobre-nosotros">
-  <h2>Lorena Roldan Agencia de Modelos</h2>
-
-  <p>
-    En 2017 Lorena Roldán fue convocada para <strong>la revista Gente</strong>, luego por <strong>la revista Caras</strong>, donde maquilló a modelos mostrando el talento y la esencia de Tucumán al país.
-  </p>
-  <p>
-    En este camino de pasión y profesionalismo, nació Lorena Roldán Agencia de Modelos, un espacio de formación integral con más de diez años de trayectoria institucional en Monteros.
-  </p>
-
-  <p>
-    Desde hace dos años, <strong>cada sábado se dictan clases abiertas a partir de los 5 años y sin límite de edad</strong>, con una propuesta inclusiva y profesional, que apunta no solo a enseñar técnicas de pasarela, sino también a fortalecer la confianza, la seguridad y la proyección personal de cada alumno y alumna.
-  </p>
-
-  <p>
-    En la agencia formamos a quienes desean vivir el fascinante mundo de la moda, ofreciendo herramientas, experiencias y oportunidades que trascienden lo artístico y <strong>contribuyen a un verdadero crecimiento personal</strong>.
-  </p>
-
-  <p><em>Lorena Roldán</em> – Creadora</p>
-  <img src="images/sobre nosotros.jpg" alt="imagen de los modelos" width="400px">
-</section>
-
-<!--Cards de servicios ofrecidos-->
-<!--Catalogo con cards de modelos-->
-<!--Footer-->
-
-<section id="footerDos">
-
- <footer>
-   <p>
-     © 2025 Lorena Roldán Agencia de Modelos · Monteros, Tucumán · Todos los derechos reservados
-   </p>
-
-   <p>
-     <img src="images/instagram.jpg" alt="logo de instagram" width="50px">
-     <a href="https://www.instagram.com/lr.agenciademodelos?igsh=MTdpazlsOG41d3BqYg==" target="_blank">
-      @LorenaRoldan.Agencia
-       
-     </a>
+    <p>
+      En 2017 Lorena Roldán fue convocada para <strong>la revista Gente</strong>, luego por <strong>la revista
+        Caras</strong>, donde maquilló a modelos mostrando el talento y la esencia de Tucumán al país.
     </p>
- </footer>
+    <p>
+      En este camino de pasión y profesionalismo, nació Lorena Roldán Agencia de Modelos, un espacio de formación
+      integral con más de diez años de trayectoria institucional en Monteros.
+    </p>
 
-</section>
+    <p>
+      Desde hace dos años, <strong>cada sábado se dictan clases abiertas a partir de los 5 años y sin límite de
+        edad</strong>, con una propuesta inclusiva y profesional, que apunta no solo a enseñar técnicas de pasarela,
+      sino también a fortalecer la confianza, la seguridad y la proyección personal de cada alumno y alumna.
+    </p>
 
-<!--Boton de retorno al inicio-->
+    <p>
+      En la agencia formamos a quienes desean vivir el fascinante mundo de la moda, ofreciendo herramientas,
+      experiencias y oportunidades que trascienden lo artístico y <strong>contribuyen a un verdadero crecimiento
+        personal</strong>.
+    </p>
+
+    <p><em>Lorena Roldán</em> – Creadora</p>
+    <img src="./images/sobre-nosotros.jpg" alt="imagen de los modelos" width="400px">
+  </section>
+
+  <!--Cards de servicios ofrecidos-->
+  <!--Catalogo con cards de modelos-->
+  <!--Es un carrucel asi que corresponde al siguiente sprint-->
+
+  <!--Footer-->
+  <section id="footerDos">
+
+    <footer>
+      <p>
+        © 2025 Lorena Roldán Agencia de Modelos · Monteros, Tucumán · Todos los derechos reservados
+      </p>
+
+      <p>
+        <img src="images/instagram.jpg" alt="logo de instagram" width="50px">
+        <a href="https://www.instagram.com/lr.agenciademodelos/" target="_blank">
+          @lr.agenciademodelos
+
+        </a>
+      </p>
+    </footer>
+
+  </section>
+
+  <!--Boton de retorno al inicio-->
 </body>
-</html> 
+
+</html>
