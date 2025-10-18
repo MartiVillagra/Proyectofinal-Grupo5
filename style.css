@@ -3,6 +3,76 @@
 /* Formulario de contacto */
 /* Sobre nosotros */
 /* Catalogo de servicios ofrecidos */
+.principal {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.principal-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.principal-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.principal-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* --- GRID DE IMÁGENES 3x3 --- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* --- TARJETAS --- */
+.tarjet {
+  position: relative;
+  text-align: center;
+}
+
+.tarjet img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.tarjet img:hover {
+  transform: scale(1.05);
+}
+
+/* --- TÍTULOS DE LAS TARJETAS --- */
+.tarjet h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* Catalogo con card de modelos */
 /* Footer */
 /* Boton de retorno al inicio */

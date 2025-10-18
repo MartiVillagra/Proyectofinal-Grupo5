@@ -7,7 +7,7 @@
   <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
   <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
   <link rel="icon" type="image" href="./images/icon.png" />
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -83,12 +83,13 @@
   </section>
 
   <!--Cards de servicios ofrecidos-->
-  <section id="servicios">
-    <div>
+    <section id="servicios" class="principal">
+    <div class="principal-container">
       <h2>Más que solo modelaje</h2>
       <p>En Lorena Roldán Agencia de Modelos nos comprometemos a brindarte una formacion integral que va mas alla de
         la pasarela. Nuestra misión es que adquieras las herramientas necesarias para desarrollarte como una verdadera
         profesional en el mundo de la moda. Aquí podrás aprender y perfeccionarte en:</p>
+        <div class="grid-container">
       <div class="tarjet">
         <img src="./images/services/Publicidad.png" alt="Publicidad y campañas" width="300" />
         <h3>Publicidad y Campañas</h3>
@@ -112,6 +113,7 @@
       <div class="tarjet">
         <img src="./images/services/Seguridad.png" alt="Seguridad y desenvolvimiento" width="300" />
         <h3>Seguridad y Desenvolvimiento</h3>
+      </div>
       </div>
     </div>
   </section>
