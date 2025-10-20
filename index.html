@@ -7,7 +7,7 @@
   <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
   <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
   <link rel="icon" type="image" href="./images/icon.png" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -118,9 +118,71 @@
     </div>
   </section>
 
-  <!--Catalogo con cards de modelos-->
-  <h3>Aquí iría el catálogo de Modelos</h3>
-  <!--No corresponde a este sprint los carruseles-->
+  <!--Carrusel de modelos-->
+<section id="modelos" class="container-fluid py-5">
+  <h2 class="text-center fw-bold mb-5">Descubre algunos de nuestros modelos</h2>
+  <div id="carruselModelos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-sm-6 d-flex justify-content-center ">
+            <img src="./images/models/modelo1.jpg" class="img-fluid rounded mb-4" alt="Modelo 1">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center ">
+            <h3>Sol Roldán</h3>
+            <p>Edad: 18<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/solroldan_okk/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @solroldan_okk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo2.jpg" class="img-fluid rounded mb-4" alt="Modelo 2">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Paula Ybrahim</h3>
+            <p>Edad: 22<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/pauuybrahim_/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @pauuybrahim_</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo3.jpg" class="img-fluid rounded mb-4" alt="Modelo 3">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Micaela Quiroga</h3>
+            <p>Edad: 20<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/micaquiroga__/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @micaquiroga__</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo4.jpg" class="img-fluid rounded mb-4" alt="Modelo 4">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Candela Acuña</h3>
+            <p>Edad: 22<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/_cande_2a__/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @_cande_2a_</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!--Boton de retorno al inicio-->
   <section id="boton-retorno">
