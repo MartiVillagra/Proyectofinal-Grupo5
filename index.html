@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final - Grupo 5</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Proyecto Final - Grupo 5">
+  <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
+  <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
+  <link rel="icon" type="image" href="./images/icon.png" />
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Proyecto Final - Grupo 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    
+  <!--Barra de navegación-->
+  <header>
+    <nav class="barra">
+      <img src="./images/logo.png" alt="Logo de la Agencia de Modelos" width="100">
+      <ul>
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Hero principal-->
+  <section id="hero">
+    <img src="./images/imagen-fondo-hero.jpg" width="500" alt="Imagen de modelos">
+    <h2>Empieza a modelar hoy</h2>
+    <button>Inscribete ahora</button>
+  </section>
+
+  <!--Formulario de contacto-->
+  <section id="contacto">
+    <div class="contacto-imagen">
+      <img src="./images/formulario-imagen.png" alt="Poster de modelo" width="400">
+    </div>
+    <div class="contacto-formulario">
+      <h2>Se parte de nuestra agencia</h2>
+      <form action="#" method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
+        <input type="email" id="email" name="email" placeholder="Email*" required>
+        <input type="text" id="presentacion" name="presentacion" placeholder="Presentación*" required>
+
+        <button type="submit">Empieza a modelar</button>
+      </form>
+      <p class="contacto-texto">¿Te imaginas frente a una cámara, una campaña o incluso en una pasarela?<br>Déjanos tus
+        datos y viví la experiencia con nosotros.<br><br><strong>Primera clase gratis, ¡no te lo pierdas!</strong>
+      </p>
+    </div>
+  </section>
+
+  <!--Sobre nosotros-->
+  <section id="sobre-nosotros">
+    <h2>Lorena Roldan Agencia de Modelos</h2>
+    <p>
+      En 2017 Lorena Roldán fue convocada para <strong>la revista Gente</strong>, luego por <strong>la revista
+        Caras</strong>, donde maquilló a modelos mostrando el talento y la esencia de Tucumán al país.
+    </p>
+    <p>
+      En este camino de pasión y profesionalismo, nació Lorena Roldán Agencia de Modelos, un espacio de formación
+      integral con más de diez años de trayectoria institucional en Monteros.
+    </p>
+    <p>
+      Desde hace dos años, <strong>cada sábado se dictan clases abiertas a partir de los 5 años y sin límite de
+        edad</strong>, con una propuesta inclusiva y profesional, que apunta no solo a enseñar técnicas de pasarela,
+      sino también a fortalecer la confianza, la seguridad y la proyección personal de cada alumno y alumna.
+    </p>
+    <p>
+      En la agencia formamos a quienes desean vivir el fascinante mundo de la moda, ofreciendo herramientas,
+      experiencias y oportunidades que trascienden lo artístico y <strong>contribuyen a un verdadero crecimiento
+        personal</strong>.
+    </p>
+    <p><em>Lorena Roldán</em> – Creadora</p>
+    <img src="./images/sobre-nosotros.jpg" alt="imagen de los modelos" width="400px">
+  </section>
+
+  <!--Cards de servicios ofrecidos-->
+  <section id="servicios">
+    <div>
+      <h2>Más que solo modelaje</h2>
+      <p>En Lorena Roldán Agencia de Modelos nos comprometemos a brindarte una formacion integral que va mas alla de
+        la pasarela. Nuestra misión es que adquieras las herramientas necesarias para desarrollarte como una verdadera
+        profesional en el mundo de la moda. Aquí podrás aprender y perfeccionarte en:</p>
+      <div class="tarjet">
+        <img src="./images/services/Publicidad.png" alt="Publicidad y campañas" width="300" />
+        <h3>Publicidad y Campañas</h3>
+      </div>
+      <div class="tarjet">
+        <img src="./images/services/Automaquillaje.jpg" alt="Automaquillaje y peinado" width="300" />
+        <h3>Automaquillaje y Peinado</h3>
+      </div>
+      <div class="tarjet">
+        <img src="./images/services/Pasarela.jpg" alt="Pasarela profesional" width="300" />
+        <h3>Pasarela profesional</h3>
+      </div>
+      <div class="tarjet">
+        <img src="./images/services/Fotografia.jpg" alt="Fotografía y producción" width="300" />
+        <h3>Fotografía y Producción</h3>
+      </div>
+      <div class="tarjet">
+        <img src="./images/services/Proyección.png" alt="Proyección nacional e internacional" width="300" />
+        <h3>Proyección nacional e internacional</h3>
+      </div>
+      <div class="tarjet">
+        <img src="./images/services/Seguridad.png" alt="Seguridad y desenvolvimiento" width="300" />
+        <h3>Seguridad y Desenvolvimiento</h3>
+      </div>
+    </div>
+  </section>
+
+<section id="modelos" class="container-fluid py-5">
+  <h2 class="text-center fw-bold mb-5">Descubre algunos de nuestros modelos</h2>
+  <div id="carruselModelos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-sm-6 d-flex justify-content-center ">
+            <img src="./images/models/modelo1.jpg" class="img-fluid rounded mb-4" alt="Modelo 1">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center ">
+            <h3>Sol Roldán</h3>
+            <p>Edad: 18<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/solroldan_okk/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @solroldan_okk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo2.jpg" class="img-fluid rounded mb-4" alt="Modelo 2">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Paula Ybrahim</h3>
+            <p>Edad: 22<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/pauuybrahim_/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @pauuybrahim_</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo3.jpg" class="img-fluid rounded mb-4" alt="Modelo 3">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Micaela Quiroga</h3>
+            <p>Edad: 21<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/micaquiroga__/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @micaquiroga__</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <img src="./images/models/modelo4.jpg" class="img-fluid rounded mb-4" alt="Modelo 4">
+          </div>
+          <div class="col-sm-6 d-flex flex-column justify-content-center">
+            <h3>Candela Acuña</h3>
+            <p>Edad: 22<br>
+            Modelo profesional de pasarela y fotografía con más de tres años de experiencia. Participó en certámenes nacionales y campañas publicitarias para marcas locales.</p>
+            <a href="https://www.instagram.com/_cande_2a__/" target="_blank" class="text-decoration-none"><i class="bi bi-instagram"></i> @_cande_2a_</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!--Boton de retorno al inicio-->
+  <section id="boton-retorno">
+    <a href="#hero">
+      <button><img src="./images/flecha.png" alt="Volver al inicio" width="20"></button>
+    </a>
+  </section>
+
+  <!--Footer-->
+  <section id="footer">
+    <footer>
+      <p>
+        © 2025 Lorena Roldán Agencia de Modelos · Monteros, Tucumán · Todos los derechos reservados
+      </p>
+      <p>
+        <img src="images/instagram.jpg" alt="logo de instagram" width="50px">
+        <a href="https://www.instagram.com/lr.agenciademodelos/" target="_blank">
+          @lr.agenciademodelos
+        </a>
+      </p>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
