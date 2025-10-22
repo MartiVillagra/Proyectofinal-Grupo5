@@ -1,8 +1,33 @@
-<<<<<<< HEAD
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 /* Barra de navegación */
+
+.navbar {
+  background-color: #333;
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+}
 /* Hero principal */
 /* Formulario de contacto */
 /* Sobre nosotros */
+
 /* Catalogo de servicios ofrecidos */
 .principal {
   padding: 50px 0;
@@ -74,24 +99,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+
 /* Catalogo con card de modelos */
-/* Footer */
-/* Boton de retorno al inicio */
-=======
-/* aqui irian los estilos del proyecto */
-html {
-  scroll-behavior: smooth;
-}
-
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Estilos para la sección de modelos */
 #modelos img{
   width: 60%;
   height: auto;
@@ -110,4 +120,6 @@ html, body {
 #modelos a{
   color: #a9213c;
 }
->>>>>>> style-carrusel
+
+/* Footer */
+/* Boton de retorno al inicio */
