@@ -7,7 +7,7 @@
   <meta name="description" content="Proyecto: Landing page de una Agencia de Modelos">
   <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
   <link rel="icon" type="image" href="./images/icon.png" />
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -96,40 +96,73 @@
   </section>
 
   <!--Cards de servicios ofrecidos-->
-  <section id="servicios" class="principal">
-    <div class="principal-container">
-      <h2>Más que solo modelaje</h2>
-      <p>En Lorena Roldán Agencia de Modelos nos comprometemos a brindarte una formacion integral que va mas alla de
-        la pasarela. Nuestra misión es que adquieras las herramientas necesarias para desarrollarte como una verdadera
-        profesional en el mundo de la moda. Aquí podrás aprender y perfeccionarte en:</p>
-      <div class="grid-container">
-        <div class="tarjet">
-          <img src="./images/services/Publicidad.png" alt="Publicidad y campañas" width="300" />
-          <h3>Publicidad y Campañas</h3>
+  <section id="servicios" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3">Más que solamente modelaje</h2>
+            <p class="mb-5">
+                En Lorena Roldán Agencia de Modelos brindamos una formación integral que va más allá de la pasarela.
+                Nuestra misión es que adquieras las herramientas necesarias para desarrollarte como una verdadera
+                profesional
+                en el mundo de la moda. Aquí podrás aprender y perfeccionarte en:
+            </p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Publicidad.png" class="card-img-top" alt="Publicidad">
+                        <div class="card-body">
+                            <h5 class="card-title">Publicidad y Campañas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Automaquillaje.jpg" class="card-img-top" alt="Automaquillaje">
+                        <div class="card-body">
+                            <h5 class="card-title">Automaquillaje y Peinado</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Pasarela.jpg" class="card-img-top" alt="Pasarela">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasarela Profesional</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Fotografia.jpg" class="card-img-top" alt="Fotografía">
+                        <div class="card-body">
+                            <h5 class="card-title">Fotografía y Producción</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Proyección.png" class="card-img-top" alt="Proyección">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyección Nacional e Internacional</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./images/services/Seguridad.png" class="card-img-top" alt="Seguridad">
+                        <div class="card-body">
+                            <h5 class="card-title">Seguridad y Desenvolvimiento</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tarjet">
-          <img src="./images/services/Automaquillaje.jpg" alt="Automaquillaje y peinado" width="300" />
-          <h3>Automaquillaje y Peinado</h3>
-        </div>
-        <div class="tarjet">
-          <img src="./images/services/Pasarela.jpg" alt="Pasarela profesional" width="300" />
-          <h3>Pasarela profesional</h3>
-        </div>
-        <div class="tarjet">
-          <img src="./images/services/Fotografia.jpg" alt="Fotografía y producción" width="300" />
-          <h3>Fotografía y Producción</h3>
-        </div>
-        <div class="tarjet">
-          <img src="./images/services/Proyección.png" alt="Proyección nacional e internacional" width="300" />
-          <h3>Proyección nacional e internacional</h3>
-        </div>
-        <div class="tarjet">
-          <img src="./images/services/Seguridad.png" alt="Seguridad y desenvolvimiento" width="300" />
-          <h3>Seguridad y Desenvolvimiento</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>>
 
   <!--Carrusel de modelos-->
   <section id="modelos" class="container-fluid py-5">
@@ -206,12 +239,9 @@
   </section>
 
   <!--Boton de retorno al inicio-->
-  <section id="boton-retorno">
-    <a href="#hero">
-      <button><img src="./images/flecha.png" alt="Volver al inicio" width="20"></button>
+   <a href="#hero" id="btn-retorno" class="btn-retorno">
+        <i class="bi bi-arrow-up"></i>
     </a>
-  </section>
-
   <!--Footer-->
   <section id="footer">
     <footer>
