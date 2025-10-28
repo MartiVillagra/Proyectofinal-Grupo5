@@ -3,10 +3,8 @@ html {
 }
 
 section {
-  scroll-margin-top: 100px; /* ajustá este valor al alto de tu navbar */
+  scroll-margin-top: 50px; /* ajustá este valor al alto de tu navbar */
 }
-
-
 
 html, body {
   width: 100%;
@@ -32,6 +30,30 @@ html, body {
 }
 /* Hero principal */
 /* Formulario de contacto */
+#contacto {
+  background-color: #f8f9fa; 
+  padding: 50px 20px;
+}
+
+#contacto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+ #contacto button {
+    background-color: #a9213c;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#contacto button:hover {
+    background-color: #921c2f;
+}
+
 /* Sobre nosotros */
 
 #sobre-nosotros {
