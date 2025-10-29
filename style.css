@@ -2,10 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
 section {
   scroll-margin-top: 50px; /* ajustá este valor al alto de tu navbar */
 }
 
+=======
+>>>>>>> sobre-nosotros-css
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -30,11 +33,18 @@ html, body {
 }
 /* Hero principal */
 
+<<<<<<< HEAD
 #hero {
   background-image: url('./images/imagen-fondo-hero.jpg'); 
   background-size: cover;      
   background-position: center; 
   height: 100vh;               
+=======
+#hero { 
+  background-size: cover;      
+  background-position: center; 
+  height: 100vh;                
+>>>>>>> sobre-nosotros-css
   color: white;               
   position: relative;    
 }    
@@ -93,6 +103,7 @@ html, body {
 
 /* Sobre nosotros */
 
+
 #sobre-nosotros {
 
   background-color: #f8f9fa; 
@@ -120,6 +131,7 @@ html, body {
     height: auto;
 }
 
+<<<<<<< HEAD
   @media (max-width: 768px) {
       #sobre-nosotros {
           padding: 20px;
@@ -133,6 +145,8 @@ html, body {
           font-size: 0.95rem;
       }
   }
+=======
+>>>>>>> sobre-nosotros-css
   
 /* Catalogo de servicios ofrecidos */
 .principal {
@@ -209,20 +223,32 @@ html, body {
 
 /* Catalogo con card de modelos */
 #modelos img{
+<<<<<<< HEAD
   width: 57%;
+=======
+  width: 60%;
+>>>>>>> sobre-nosotros-css
   height: auto;
   object-fit: cover;
 }
 
 #modelos h2{
+<<<<<<< HEAD
   color: #333;
   font-size: 2rem;
   font-family: sans-serif;
+=======
+  color: #a9213c;
+  font-size: 2.5rem;
+>>>>>>> sobre-nosotros-css
 }
 
 #modelos {
   background-color: #f8f9fa;
+<<<<<<< HEAD
   
+=======
+>>>>>>> sobre-nosotros-css
 }
 
 #modelos a{
