@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 50px; /* ajustá este valor al alto de tu navbar */
+}
+
 html, body {
   width: 100%;
   overflow-x: hidden;
@@ -26,8 +30,41 @@ html, body {
 }
 /* Hero principal */
 /* Formulario de contacto */
-/* Sobre nosotros */
+#contacto {
+  background-color: #f8f9fa; 
+  padding: 50px 20px;
+}
 
+#contacto h2 {
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;  
+}
+#contacto p {
+    font-size: large;
+}
+
+#contacto img {
+    max-width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+ #contacto button {
+    background-color: #a9213c;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+#contacto button:hover {
+    background-color: #921c2f;
+}
+
+/* Sobre nosotros */
 
 #sobre-nosotros {
 
@@ -145,18 +182,20 @@ html, body {
 
 /* Catalogo con card de modelos */
 #modelos img{
-  width: 60%;
+  width: 57%;
   height: auto;
   object-fit: cover;
 }
 
 #modelos h2{
-  color: #a9213c;
-  font-size: 2.5rem;
+  color: #333;
+  font-size: 2rem;
+  font-family: sans-serif;
 }
 
 #modelos {
   background-color: #f8f9fa;
+  
 }
 
 #modelos a{
