@@ -29,6 +29,33 @@ html, body {
   font-size: 1rem;
 }
 /* Hero principal */
+
+#hero {
+  background-image: url('./images/imagen-fondo-hero.jpg'); 
+  background-size: cover;      
+  background-position: center; 
+  height: 100vh;               
+  color: white;               
+  position: relative;    
+}    
+
+#hero .btn{
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+#hero .btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+
+}
+
 /* Formulario de contacto */
 #contacto {
   background-color: #f8f9fa; 
