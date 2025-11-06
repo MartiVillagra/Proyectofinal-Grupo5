@@ -165,3 +165,31 @@ html, body {
 
 /* Footer */
 /* Boton de retorno al inicio */
+.btn-retorno {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* azul */
+    border-radius: 50%; /* hace el círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.btn-retorno:hover {
+    background-color: #0056b3; /* azul más oscuro al pasar el mouse */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-retorno i {
+    line-height: 1;
+}
