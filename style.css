@@ -1,169 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
 
-html, body {
-  width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-/* Barra de navegación */
-
-.navbar {
-  background-color: #333;
-  padding: 15px 0;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-.navbar a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 1rem;
-}
-/* Hero principal */
-/* Formulario de contacto */
-/* Sobre nosotros */
-
-
-#sobre-nosotros {
-
-  background-color: #f8f9fa; 
-  border-radius: 15px;
-  padding: 40px;
-}
-
-#sobre-nosotros h2 {
-    color: #000000;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 30px;   
-}
-
-#sobre-nosotros p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #000000;
-}
-
-#sobre-nosotros img {
-    display: block;
-    margin: 20px auto 0;
-    max-width: 100%;
-    height: auto;
-}
-
-  @media (max-width: 768px) {
-      #sobre-nosotros {
-          padding: 20px;
-      }
-
-      #sobre-nosotros h2 {
-          font-size: 1.5rem;
-      }
-
-      #sobre-nosotros p {
-          font-size: 0.95rem;
-      }
-  }
-  
-/* Catalogo de servicios ofrecidos */
-.principal {
-  padding: 50px 0;
-  text-align: center;
-  background-color: #f8f8f8;
-}
-
-.principal-container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.principal-container h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.principal-container p {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 40px;
-}
-
-/* --- GRID DE IMÁGENES 3x3 --- */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-items: center;
-}
-
-/* --- TARJETAS --- */
-.tarjet {
-  position: relative;
-  text-align: center;
-}
-
-.tarjet img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.tarjet img:hover {
-  transform: scale(1.05);
-}
-
-/* --- TÍTULOS DE LAS TARJETAS --- */
-.tarjet h3 {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-}
-
-/* --- RESPONSIVE --- */
-@media (max-width: 992px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* Catalogo con card de modelos */
-#modelos img{
-  width: 60%;
-  height: auto;
-  object-fit: cover;
-}
-
-#modelos h2{
-  color: #a9213c;
-  font-size: 2.5rem;
-}
-
-#modelos {
-  background-color: #f8f9fa;
-}
-
-#modelos a{
-  color: #a9213c;
-}
-
-/* Footer */
 /* Boton de retorno al inicio */
 .btn-retorno {
     position: fixed;
@@ -171,7 +6,7 @@ html, body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #007bff; /* azul */
+    background-color: #a9213c; /* azul */
     border-radius: 50%; /* hace el círculo */
     display: flex;
     align-items: center;
@@ -185,7 +20,7 @@ html, body {
 }
 
 .btn-retorno:hover {
-    background-color: #0056b3; /* azul más oscuro al pasar el mouse */
+    background-color: #95122c; /* azul más oscuro al pasar el mouse */
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
