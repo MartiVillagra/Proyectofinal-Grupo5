@@ -1,9 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
 section {
-  scroll-margin-top: 50px; /* ajustá este valor al alto de tu navbar */
+  scroll-margin-top: 80px; /* ajustá este valor al alto de tu navbar */
 }
 
 html, body {
@@ -11,6 +7,19 @@ html, body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+
+:root {
+  --background-color: #f8f9fa;
+  --text-title-color: #333;
+  --text-color: #1a1a1a;
+  --icon-menu-color: #ffffff;
+  --menu-color: #333333;
+
+  --text--selected--color: #a9213c;
+  --background-selected-color: #333;
+  --background-hover: #a9213c;
 }
 
 /* Barra de navegación */
@@ -21,21 +30,46 @@ html, body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  cursor: default;
+  position: fixed;
 }
-.navbar a {
+
+.navbar img {
+  cursor: pointer;
+}
+
+.navbar .nav-link {
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  /* Hover normal solo en pantallas grandes */
+  .navbar .nav-link:hover {
+    color: #a9213c;
+    transform: scale(1.1);
+  }
+
+  /* Evita que queden “pegados” después del clic */
+  .navbar .nav-link:focus,
+  .navbar .nav-link:active {
+    color: #fff;
+    transform: none;
+    outline: none;
+  }
+}
+
 /* Hero principal */
 #hero {
-  background-image: url('./images/imagen-fondo-hero.jpg'); 
+  background-image: url('./images/imagen-fondo-hero.jpeg'); 
   background-size: cover;      
   background-position: center; 
   height: 100vh;              
-  color: white;               
-  position: relative;    
+  color: white;
 }    
 
 #hero .btn{
@@ -49,7 +83,7 @@ html, body {
 }
 
 #hero .btn:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #a9213c;
   transform: scale(1.05);
   transition: all 0.3s ease;
 
@@ -91,7 +125,6 @@ html, body {
 }
 
 /* Sobre nosotros */
-
 
 #sobre-nosotros {
 
@@ -159,6 +192,7 @@ html, body {
   text-align: center;
 }
 
+
 .tarjet img {
   width: 100%;
   max-width: 300px;
@@ -167,8 +201,9 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-.tarjet img:hover {
+.tarjet img:hover{
   transform: scale(1.05);
+  box-shadow: 0 0 8px #333, 0 0 15px #333;
 }
 
 /* --- TÍTULOS DE LAS TARJETAS --- */
