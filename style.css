@@ -79,7 +79,6 @@ html, body {
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease;
-
 }
 
 #hero .btn:hover {
@@ -96,67 +95,62 @@ html, body {
 }
 
 #contacto h2 {
-    color: #333;
-    font-weight: 700;
-    text-transform: uppercase;  
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;  
 }
 #contacto p {
     font-size: large;
 }
 
 #contacto img {
-    max-width: auto;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
- #contacto button {
-    background-color: #a9213c;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1.5rem;
+
+#contacto button {
+  background-color: #a9213c;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 #contacto button:hover {
-    background-color: #921c2f;
+  background-color: #921c2f;
 }
 
 /* Sobre nosotros */
-
 #sobre-nosotros {
-
   background-color: #f8f9fa; 
   border-radius: 15px;
   padding: 40px;
 }
 
 #sobre-nosotros h2 {
-    color: #000000;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 30px;   
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 30px;   
 }
 
 #sobre-nosotros p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #000000;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 1.2rem;
 }
 
 #sobre-nosotros img {
-    display: block;
-    margin: 20px auto 0;
-    max-width: 100%;
-    height: auto;
+  max-width: 80%;
+  height: auto;
 }
   
 /* Catalogo de servicios ofrecidos */
 .principal {
   padding: 50px 0;
-  text-align: center;
   background-color: #f8f8f8;
 }
 
@@ -174,7 +168,6 @@ html, body {
 
 .principal-container p {
   font-size: 1.1rem;
-  color: #555;
   margin-bottom: 40px;
 }
 
@@ -227,21 +220,12 @@ html, body {
   }
 }
 
-
 /* Catalogo con card de modelos */
 #modelos img{
   width: 57%;
   width: 60%;
   height: auto;
   object-fit: cover;
-}
-
-#modelos h2{
-  color: #333;
-  font-size: 2rem;
-  font-family: sans-serif;
-  color: #a9213c;
-  font-size: 2.5rem;
 }
 
 #modelos {
@@ -253,10 +237,8 @@ html, body {
 }
 
 /* Footer */
-
 #footer {
-
-  background-color: #495057;
+  background-color: #333;
   color: #f8f9fa;
   text-align: center;
   padding: 30px 15px;
