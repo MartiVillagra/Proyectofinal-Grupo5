@@ -31,3 +31,63 @@ function enableSmoothScroll() {
     });
 }
 document.addEventListener('DOMContentLoaded', enableSmoothScroll);
+
+// Funcionalidad del formulario con validaciones y EMAILJS
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contacto-form");
+    const mensaje = document.getElementById("mensaje-formulario");
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        mensaje.innerHTML = "";
+        mensaje.style.color = "red";
+
+        const nombre = document.getElementById("nombre").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const presentacion = document.getElementById("presentacion").value.trim();
+        const acepto = document.getElementById("acepto").checked;
+
+        // VALIDACIONES
+        if (nombre === "") {
+            mensaje.innerHTML = "El nombre es obligatorio.";
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            mensaje.innerHTML = "El correo electrónico no es válido.";
+            return;
+        }
+
+        if (!acepto) {
+            mensaje.innerHTML = "Debes aceptar compartir tu información.";
+            return;
+        }
+
+        // Si todo está bien
+        mensaje.style.color = "#555";
+        mensaje.innerHTML = "Enviando...";
+
+        try {
+            const formData = new FormData(form);
+
+            const response = await fetch("/", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                mensaje.style.color = "green";
+                mensaje.innerHTML = "Formulario enviado correctamente. ¡Gracias por escribirnos!";
+                form.reset();
+            } else {
+                throw new Error("Error al enviar");
+            }
+
+        } catch (error) {
+            mensaje.style.color = "red";
+            mensaje.innerHTML = "Hubo un error al enviar el formulario. Intenta de nuevo.";
+            console.error(error);
+        }
+    });
+});
