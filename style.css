@@ -263,28 +263,40 @@ body {
 
 
 /* Botón de retorno */
-#boton-retorno {
+.oculto{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity .4s ease, transform .4s, visibility .4s ease !important;
+}
+
+.visible{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity .4s ease, transform .4s, visibility .4s ease !important;
+}
+
+#btn-top {
   position: fixed;
   bottom: 20px;
   right: 90px;
   z-index: 999;
-}
-
-.btn-retorno {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
   background-color: #a9213c;
   color: #fff;
-  padding: 12px 15px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  display: flex;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-retorno:hover {
+#btn-top:hover {
   background-color: #921c2f;
   color: #fff;
   transform: translateY(-3px);
@@ -292,14 +304,14 @@ body {
 
 /* Opcional: ocultarlo en móviles muy pequeños */
 @media (max-width: 480px) {
-  .btn-retorno {
+  .btn-top-oculto {
     padding: 10px 12px;
     font-size: 1rem;
   }
 }
 
 /*Botón de whatsapp flotante*/
-.whatsapp-btn {
+#btn-wsp {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -335,6 +347,6 @@ body {
   }
 }
 
-.whatsapp-btn:hover {
+#btn-wsp:hover {
   background-color: #1ebe5a;
 }
