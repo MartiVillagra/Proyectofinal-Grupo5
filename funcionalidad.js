@@ -91,3 +91,34 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+//Funcionalidad del boton de retorno al inicio y que se oculte en el Hero
+document.addEventListener("DOMContentLoaded", () => {
+
+    const hero = document.getElementById("hero");
+    const btnWsp = document.getElementById("btn-wsp");
+    const btnTop = document.getElementById("btn-top");
+
+    const botones = [btnWsp, btnTop];
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                // Cuando el HERO ya no se ve → mostrar botones
+                botones.forEach(b => b.classList.add("visible"));
+                botones.forEach(b => b.classList.remove("oculto"));
+            } else {
+                // Cuando el HERO está en pantalla → ocultar
+                botones.forEach(b => b.classList.remove("visible"));
+                botones.forEach(b => b.classList.add("oculto"));
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(hero);
+
+    // Función de subir al inicio
+    btnTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
