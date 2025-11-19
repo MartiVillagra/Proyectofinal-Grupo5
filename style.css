@@ -11,19 +11,6 @@ body {
   padding: 0;
 }
 
-
-:root {
-  --background-color: #f8f9fa;
-  --text-title-color: #333;
-  --text-color: #1a1a1a;
-  --icon-menu-color: #ffffff;
-  --menu-color: #333333;
-
-  --text--selected--color: #a9213c;
-  --background-selected-color: #333;
-  --background-hover: #a9213c;
-}
-
 /* Barra de navegación */
 
 .navbar {
@@ -236,8 +223,13 @@ body {
   background-color: #f8f9fa;
 }
 
-#modelos a {
+.model-link {
   color: #a9213c;
+  cursor:pointer;
+}
+
+.model-link:hover {
+  color: #8b172a;
 }
 
 /* Footer */
@@ -250,15 +242,14 @@ body {
 }
 
 #footer p {
-
   font-size: 1.2rem;
-
 }
 
-#footer a {
+.footer-instagram {
   color: #f8f9fa;
   text-decoration: none;
   font-weight: 500;
+  cursor:pointer;
 }
 
 
