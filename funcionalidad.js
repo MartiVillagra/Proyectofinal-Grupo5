@@ -91,3 +91,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Funcionalidad de links a instagram de carrusel y footer
+document.addEventListener("DOMContentLoaded", () => {
+
+    // FOOTER
+    const footerInsta = document.querySelector(".footer-instagram");
+    if (footerInsta) {
+        footerInsta.addEventListener("click", () => {
+            const url = footerInsta.getAttribute("data-url");
+            window.open(url, "_blank");
+        });
+    }
+
+    // MODELOS DEL CARRUSEL
+    const modelosLinks = document.querySelectorAll(".model-link");
+
+    modelosLinks.forEach(item => {
+        item.addEventListener("click", () => {
+            const url = item.getAttribute("data-url");
+            window.open(url, "_blank");
+        });
+    });
+
+});

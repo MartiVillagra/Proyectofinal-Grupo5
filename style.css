@@ -236,8 +236,13 @@ body {
   background-color: #f8f9fa;
 }
 
-#modelos a {
+.model-link {
   color: #a9213c;
+  cursor:pointer;
+}
+
+.model-link:hover {
+  color: #921c2f;
 }
 
 /* Footer */
@@ -246,19 +251,17 @@ body {
   color: #f8f9fa;
   text-align: center;
   padding: 30px 15px;
-
 }
 
 #footer p {
-
   font-size: 1.2rem;
-
 }
 
-#footer a {
+.footer-instagram {
   color: #f8f9fa;
   text-decoration: none;
   font-weight: 500;
+  cursor:pointer;
 }
 
 
